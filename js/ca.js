@@ -2,8 +2,8 @@
 function setup_ca_canvas(canvas, gridWidth, gridHeight) {
     var ca_canvas = {};
 
-    canvas.width = window.innerWidth / 2;
-    canvas.height = window.innerHeight * 0.8;
+    canvas.width = Math.min(window.innerWidth / 2, window.innerHeight * 0.8);
+    canvas.height = canvas.width;
     const ctx = canvas.getContext('2d');
 
     const colorBlack = 'rgb(0, 0, 0)';
